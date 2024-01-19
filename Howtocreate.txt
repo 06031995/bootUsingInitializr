@@ -1,0 +1,17 @@
+There are different type to create project
+  1.create maven project and add starter dependancies.
+  2.use pring initializr
+  3.use IDE STS(spring Tool Suit)
+  4.Command line interface
+ 
+2. Spring innitialize
+    go to spring initializr on browser
+    add  info like groupId...etc
+    add dependancies
+    and generate project
+    we need to install java 17 and add in     environment variable
+   Then run
+  
+
+Derived Query Method:
+   https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html
