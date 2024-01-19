@@ -1,0 +1,512 @@
+!SESSION 2024-01-13 10:51:01.318 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_281
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-01-13 10:51:42.077
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp3'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2024-01-13 10:51:48.144
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.security.ssl.SSLSocketInputRecord.read(Unknown Source)
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(Unknown Source)
+	at sun.security.ssl.SSLSocketInputRecord.decode(Unknown Source)
+	at sun.security.ssl.SSLTransport.decode(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.777
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-jdbc/6.1.2/spring-jdbc-6.1.2.jar|org/springframework/jdbc/support/SQLErrorCodeSQLExceptionTranslator.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.880
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/CacheModeType.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.885
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/CurrentTimestamp.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.916
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/LazyCollection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.919
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/LazyToOne.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.922
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/NamedNativeQuery.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.924
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/NamedQuery.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.926
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/NoAttributeConverter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.932
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Polymorphism.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.936
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Proxy.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.944
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Source.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.947
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Target.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:01.951
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/boot/AttributeConverterInfo.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.087
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/boot/model/internal/AttributeConverterDefinitionCollector.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.257
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/cache/spi/FilterKey.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.260
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/cache/spi/QuerySpacesHelper.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.424
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/dialect/identity/Oracle12cGetGeneratedKeysDelegate.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.453
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/engine/internal/Versioning.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.575
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/generator/internal/SourceGeneration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.771
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/mapping/IdGenerator.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.785
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/mapping/RootClass.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.792
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/mapping/Table.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.908
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/collection/AbstractCollectionPersister.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.913
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/collection/CompositeElementPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.915
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/collection/ElementPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.925
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/AbstractEntityPersister.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.932
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/AbstractPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.935
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/BasicEntityPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.941
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/PropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:02.944
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/SingleTableEntityPersister.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:03.007
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/query/SelectionQuery.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:03.090
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/query/sqm/function/FunctionRenderingSupport.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:03.442
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/tuple/CreationTimestampGeneration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:03.447
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/tuple/UpdateTimestampGeneration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:03.459
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/type/ComponentType.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:06.765
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar|org/springframework/scheduling/TriggerContext.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:06.765
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar|org/springframework/scheduling/Trigger.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:06.766
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar|org/springframework/scheduling/annotation/ScheduledAnnotationBeanPostProcessor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:09.239
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-web/6.1.2/spring-web-6.1.2.jar|org/springframework/web/util/UriComponentsBuilder.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:09.272
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-web/6.1.2/spring-web-6.1.2.jar|org/springframework/web/service/invoker/HttpRequestValues.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:09.315
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-web/6.1.2/spring-web-6.1.2.jar|org/springframework/http/server/reactive/ServerHttpResponse.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:09.860
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-webmvc/6.1.2/spring-webmvc-6.1.2.jar|org/springframework/web/servlet/i18n/SessionLocaleResolver.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:09.861
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-webmvc/6.1.2/spring-webmvc-6.1.2.jar|org/springframework/web/servlet/i18n/CookieLocaleResolver.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:10.257
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/couchbase/CouchbaseProperties$Ssl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:10.309
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/transaction/PlatformTransactionManagerCustomizer.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:10.320
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/jms/JmsProperties$Listener.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:10.344
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/influx/InfluxDbProperties.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:10.363
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/web/ServerProperties$Tomcat.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:10.365
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/web/servlet/WebMvcProperties.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:13.250
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar|org/springframework/core/NestedExceptionUtils.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:13.280
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar|org/springframework/util/concurrent/SuccessCallback.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 10:53:13.281
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar|org/springframework/util/concurrent/FailureCallback.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.878
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-jdbc/6.1.2/spring-jdbc-6.1.2.jar|org/springframework/jdbc/support/SQLErrorCodeSQLExceptionTranslator.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.954
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/CacheModeType.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.956
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/CurrentTimestamp.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.961
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/LazyCollection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.961
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/LazyToOne.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.962
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/NamedNativeQuery.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.963
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/NamedQuery.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.963
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/NoAttributeConverter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.964
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Polymorphism.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.964
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Proxy.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.966
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Source.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.966
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Target.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:54.968
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/boot/AttributeConverterInfo.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:55.043
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/boot/model/internal/AttributeConverterDefinitionCollector.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:55.182
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/cache/spi/FilterKey.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:55.185
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/cache/spi/QuerySpacesHelper.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:55.485
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/dialect/identity/Oracle12cGetGeneratedKeysDelegate.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:55.604
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/engine/internal/Versioning.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:55.947
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/generator/internal/SourceGeneration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.188
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/mapping/IdGenerator.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.240
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/mapping/RootClass.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.242
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/mapping/Table.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.431
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/collection/AbstractCollectionPersister.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.433
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/collection/CompositeElementPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.433
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/collection/ElementPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.441
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/AbstractEntityPersister.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.442
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/AbstractPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.443
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/BasicEntityPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.448
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/PropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.842
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/SingleTableEntityPersister.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.943
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/query/SelectionQuery.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:56.995
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/query/sqm/function/FunctionRenderingSupport.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:57.218
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/tuple/CreationTimestampGeneration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:57.221
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/tuple/UpdateTimestampGeneration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:02:57.225
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/type/ComponentType.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:00.426
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar|org/springframework/scheduling/TriggerContext.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:00.427
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar|org/springframework/scheduling/Trigger.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:00.428
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar|org/springframework/scheduling/annotation/ScheduledAnnotationBeanPostProcessor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:02.988
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-web/6.1.2/spring-web-6.1.2.jar|org/springframework/web/util/UriComponentsBuilder.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:03.037
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-web/6.1.2/spring-web-6.1.2.jar|org/springframework/web/service/invoker/HttpRequestValues.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:03.105
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-web/6.1.2/spring-web-6.1.2.jar|org/springframework/http/server/reactive/ServerHttpResponse.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:03.870
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-webmvc/6.1.2/spring-webmvc-6.1.2.jar|org/springframework/web/servlet/i18n/SessionLocaleResolver.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:03.871
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-webmvc/6.1.2/spring-webmvc-6.1.2.jar|org/springframework/web/servlet/i18n/CookieLocaleResolver.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:04.266
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/couchbase/CouchbaseProperties$Ssl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:04.309
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/transaction/PlatformTransactionManagerCustomizer.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:04.319
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/jms/JmsProperties$Listener.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:04.333
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/influx/InfluxDbProperties.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:04.346
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/web/ServerProperties$Tomcat.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:03:04.346
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/web/servlet/WebMvcProperties.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:16.874
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-jdbc/6.1.2/spring-jdbc-6.1.2.jar|org/springframework/jdbc/support/SQLErrorCodeSQLExceptionTranslator.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.024
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/CacheModeType.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.029
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/CurrentTimestamp.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.034
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/LazyCollection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.036
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/LazyToOne.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.037
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/NamedNativeQuery.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.038
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/NamedQuery.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.039
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/NoAttributeConverter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.040
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Polymorphism.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.041
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Proxy.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.044
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Source.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.045
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/annotations/Target.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.047
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/boot/AttributeConverterInfo.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:17.504
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/boot/model/internal/AttributeConverterDefinitionCollector.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.034
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/cache/spi/FilterKey.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.091
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/cache/spi/QuerySpacesHelper.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.214
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/dialect/identity/Oracle12cGetGeneratedKeysDelegate.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.233
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/engine/internal/Versioning.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.290
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/generator/internal/SourceGeneration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.389
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/mapping/IdGenerator.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.393
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/mapping/RootClass.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.395
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/mapping/Table.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.450
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/collection/AbstractCollectionPersister.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.451
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/collection/CompositeElementPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.454
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/collection/ElementPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.462
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/AbstractEntityPersister.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.462
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/AbstractPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.463
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/BasicEntityPropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.467
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/PropertyMapping.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.468
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/persister/entity/SingleTableEntityPersister.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.488
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/query/SelectionQuery.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.542
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/query/sqm/function/FunctionRenderingSupport.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.691
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/tuple/CreationTimestampGeneration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.693
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/tuple/UpdateTimestampGeneration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:18.701
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar|org/hibernate/type/ComponentType.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:22.048
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar|org/springframework/scheduling/TriggerContext.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:22.049
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar|org/springframework/scheduling/Trigger.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:22.050
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar|org/springframework/scheduling/annotation/ScheduledAnnotationBeanPostProcessor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:24.564
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-web/6.1.2/spring-web-6.1.2.jar|org/springframework/web/util/UriComponentsBuilder.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:24.597
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-web/6.1.2/spring-web-6.1.2.jar|org/springframework/web/service/invoker/HttpRequestValues.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:24.643
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-web/6.1.2/spring-web-6.1.2.jar|org/springframework/http/server/reactive/ServerHttpResponse.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:25.362
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-webmvc/6.1.2/spring-webmvc-6.1.2.jar|org/springframework/web/servlet/i18n/SessionLocaleResolver.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:25.363
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-webmvc/6.1.2/spring-webmvc-6.1.2.jar|org/springframework/web/servlet/i18n/CookieLocaleResolver.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:25.776
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/couchbase/CouchbaseProperties$Ssl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:25.822
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/transaction/PlatformTransactionManagerCustomizer.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:25.833
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/jms/JmsProperties$Listener.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:25.848
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/influx/InfluxDbProperties.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:25.861
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/web/ServerProperties$Tomcat.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:25.862
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar|org/springframework/boot/autoconfigure/web/servlet/WebMvcProperties.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:28.978
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar|org/springframework/core/NestedExceptionUtils.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:29.017
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar|org/springframework/util/concurrent/SuccessCallback.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-01-13 11:04:29.017
+!MESSAGE The Java indexing could not index C:/Users/hp3/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar|org/springframework/util/concurrent/FailureCallback.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
